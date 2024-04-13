@@ -1,0 +1,4 @@
+[workspace]
+
+members = ["two_sum", "util-derive"]
+resolver = "2"
