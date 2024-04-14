@@ -1,4 +1,4 @@
 [workspace]
 
-members = ["two_sum", "util-derive"]
+members = [ "palindrome", "testesh","two_sum", "util-derive", "valid_palindrome"]
 resolver = "2"
