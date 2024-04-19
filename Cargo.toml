@@ -1,4 +1,3 @@
 [workspace]
-
-members = [ "palindrome", "two_sum", "valid_palindrome"]
+members = ["leetcode", "leetcode-derive"]
 resolver = "2"

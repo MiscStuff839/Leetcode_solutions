@@ -1,8 +1,3 @@
-fn main() {
-    assert!(Solution::is_palindrome(121));
-    assert!(!Solution::is_palindrome(-121))
-}
-
 struct Solution;
 
 impl Solution {
@@ -17,5 +12,20 @@ impl Solution {
             c /= 10;
         }
         ans == x
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn norm_test() {
+        assert!(Solution::is_palindrome(121));
+    }
+
+    #[test]
+    fn neg_test() {
+        assert!(!Solution::is_palindrome(-121))
     }
 }

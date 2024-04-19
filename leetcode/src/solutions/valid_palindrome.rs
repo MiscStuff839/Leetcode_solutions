@@ -1,8 +1,3 @@
-fn main() {
-    assert!(Solution::is_palindrome("aba".to_string()));
-    assert!(Solution::is_palindrome("A man, a plan, a canal: Panama".to_string()))
-}
-
 struct Solution;
 
 impl Solution {
@@ -24,5 +19,16 @@ fn rem_chars(vec: &mut Vec<char>) {
         if c.is_uppercase() {
             *(vec.get_mut(i-displacement).unwrap()) = c.to_lowercase().next().unwrap();
         }
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn norm_test() {
+        assert!(Solution::is_palindrome("aba".to_string()));
+        assert!(Solution::is_palindrome("A man, a plan, a canal: Panama".to_string()))
     }
 }
